@@ -2,4 +2,18 @@
 // LAYOUT
 // ============================================================
 
+* {
+  box-sizing: border-box;
+}
 
+.clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+
+  &:after {
+    clear: both;
+  }
+}
